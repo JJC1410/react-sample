@@ -6,21 +6,12 @@ class FliterTable extends React.Component{
 		search: ''
 	}
 
-<<<<<<< HEAD
-  data = {
-    inputdata: [],
-  }
-
-  handleChange (event) {
-    let search = this.state.inputdata;
-=======
   // data = {
   //   inputdata: [],
   // }
 
   handleChange(event) {
     let search = this.porps.data;
->>>>>>> 6229b160c882336df55bdc2446e33889efb0c8d5
     search = search.filter(()=>{
       return search.search(event.targe.value) !== -1;
     })
@@ -50,11 +41,7 @@ class FliterTable extends React.Component{
       <div className="SearchBar" placeholder="SearchBar">
         <input
         	type="text"
-<<<<<<< HEAD
         	onChange={()=>this.handleChange}/>
-=======
-        	onChange={this.handleChange}/>
->>>>>>> 6229b160c882336df55bdc2446e33889efb0c8d5
         <table>
         	{ table }
         </table>
@@ -63,8 +50,4 @@ class FliterTable extends React.Component{
   }
 }
 
-<<<<<<< HEAD
 export default FliterTable;
-=======
-export default FliterTable;
->>>>>>> 6229b160c882336df55bdc2446e33889efb0c8d5
